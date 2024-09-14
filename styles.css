@@ -1,0 +1,119 @@
+body {
+    font-family: 'Lilita One';
+    background: linear-gradient(to bottom right, #0159f1, #f7ca16);
+    background-size: 200% 200%;
+    animation: gradient 20s infinite;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% { 
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+form {
+    background-color: rgba(3, 67, 243, 0.797);
+    padding:20px;
+    border-radius: 8px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+}
+
+select, button {
+    font-family: 'Lilita One';
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    color: #fff;
+    height: 45px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+button {
+    background-color: #ffcc00;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.5rem;
+}
+
+.selected-brawlers, .selected-modes, select {
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgba(3, 139, 243, 0.797);
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+label, p, h1, h2 {
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+select[multiple] {
+    height: 145px;
+}
+
+select[multiple] option:checked { 
+    text-shadow: none; /* Removes text-shadow for better looks */
+}
+
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.mission-group {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.selected-brawlers:hover, select:hover, .selected-modes:hover {
+    background-color: rgba(3, 67, 243, 0.797);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
