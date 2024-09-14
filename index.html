@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita+One">
+    <title>Brawl Stars Quest Stack</title>
+</head>
+<body>
+    <header>
+        <h1>Brawl <font color = red>Stars </font>Quest Stack</h1>
+        <p>Find common aspects among different quests to gain XPs faster</p>
+    </header>
+    <form id="missionForm">
+        <div id="missionContainer" class="mission-group">
+            <h2 class="mission-heading">Quest #1</h2>
+            <label for="quest">Quest (required):</label>
+            <select name="quest[]" class="quest" required>
+                <optgroup label="Small Quests - 200 XP each:">
+                    <option value="win_3_battles">Win 3 battles</option>
+                    <option value="defeat_9_enemies">Defeat 9 enemies</option>
+                    <option value="heal_30k">Heal 30000 points</option>
+                    <option value="deal_60k">Deal 60000 points of damage</option>
+                </optgroup>
+                <optgroup label="Medium/Hard Quests - 500 XP each:">
+                    <option value="win_5_battles">Win 5 battles</option>
+                    <option value="win_8_battles">Win 8 battles</option>
+                    <option value="defeat_15_enemies">Defeat 15 enemies</option>
+                    <option value="heal_50k">Heal 50000 points</option>
+                    <option value="deal_100k">Deal 100000 points of damage</option>
+                    <option value="deal_160k">Deal 160000 points of damage</option>
+                    <option value="play_again">Use "Play again" 10 times</option>
+                    <option value="play_5">Play 5 matches in a team</option>
+                </optgroup>
+            </select>
+            <label for="brawler">Brawler (optional):</label>
+            <span class="selected-brawlers">None selected</span>
+            <select name="brawler[]" class="brawler" multiple>
+                <option value="8-bit">8-Bit</option>
+                <option value="amber">Amber</option>
+                <option value="angelo">Angelo</option>
+                <option value="ash">Ash</option>
+                <option value="barley">Barley</option>
+                <option value="bea">Bea</option>
+                <option value="belle">Belle</option>
+                <option value="berry">Berry</option>
+                <option value="bibi">Bibi</option>
+                <option value="bo">Bo</option>
+                <option value="bonnie">Bonnie</option>
+                <option value="brock">Brock</option>
+                <option value="bull">Bull</option>
+                <option value="buster">Buster</option>
+                <option value="buzz">Buzz</option>
+                <option value="byron">Byron</option>
+                <option value="carl">Carl</option>
+                <option value="charlie">Charlie</option>
+                <option value="chester">Chester</option>
+                <option value="chuck">Chuck</option>
+                <option value="clancy">Clancy</option>
+                <option value="colette">Colette</option>
+                <option value="colt">Colt</option>
+                <option value="cordelius">Cordelius</option>
+                <option value="crow">Crow</option>
+                <option value="darryl">Darryl</option>
+                <option value="doug">Doug</option>
+                <option value="draco">Draco</option>
+                <option value="dynamike">Dynamike</option>
+                <option value="edgar">Edgar</option>
+                <option value="el_primo">El Primo</option>
+                <option value="emz">Emz</option>
+                <option value="eve">Eve</option>
+                <option value="fang">Fang</option>
+                <option value="frank">Frank</option>
+                <option value="gale">Gale</option>
+                <option value="gene">Gene</option>
+                <option value="gray">Gray</option>
+                <option value="griff">Griff</option>
+                <option value="grom">Grom</option>
+                <option value="gus">Gus</option>
+                <option value="hank">Hank</option>
+                <option value="jacky">Jacky</option>
+                <option value="janet">Janet</option>
+                <option value="jessie">Jessie</option>
+                <option value="kenji">Kenji</option>
+                <option value="kit">Kit</option>
+                <option value="larry_lawrie">Larry & Lawrie</option>
+                <option value="leon">Leon</option>
+                <option value="lily">Lily</option>
+                <option value="lola">Lola</option>
+                <option value="lou">Lou</option>
+                <option value="maisie">Maisie</option>
+                <option value="mandy">Mandy</option>
+                <option value="max">Max</option>
+                <option value="meg">Meg</option>
+                <option value="melodie">Melodie</option>
+                <option value="mico">Mico</option>
+                <option value="moe">Moe</option>
+                <option value="mr_p">Mr. P</option>
+                <option value="nani">Nani</option>
+                <option value="nita">Nita</option>
+                <option value="otis">Otis</option>
+                <option value="pam">Pam</option>
+                <option value="pearl">Pearl</option>
+                <option value="penny">Penny</option>
+                <option value="piper">Piper</option>
+                <option value="poco">Poco</option>
+                <option value="r_t">R-T</option>
+                <option value="rico">Rico</option>
+                <option value="rosa">Rosa</option>
+                <option value="ruffs">Ruffs</option>
+                <option value="sam">Sam</option>
+                <option value="sandy">Sandy</option>
+                <option value="shelly">Shelly</option>
+                <option value="spike">Spike</option>
+                <option value="sprout">Sprout</option>
+                <option value="squeak">Squeak</option>
+                <option value="stu">Stu</option>
+                <option value="surge">Surge</option>
+                <option value="tara">Tara</option>
+                <option value="tick">Tick</option>
+                <option value="willow">Willow</option>               
+            </select>
+
+            <label for="mode">Mode (optional):</label>
+            <span class="selected-modes">None selected</span>
+            <select name="mode[]" class="mode" multiple>
+                <option value="basket_brawl">Basket Brawl</option>
+                <option value="bounty">Bounty</option>
+                <option value="brawl_ball">Brawl Ball</option>
+                <option value="drum_roll">Drum Roll</option>
+                <option value="duels">Duels</option>
+                <option value="duo_showdown">Duo Showdown</option>
+                <option value="gem_grab">Gem Grab</option>
+                <option value="heist">Heist</option>
+                <option value="hot_zone">Hot Zone</option>
+                <option value="knockout">Knockout</option>
+                <option value="solo_showdown">Solo Showdown</option>
+                <option value="wipeout">Wipeout</option>
+            </select>
+
+            <button type="button" class="clear-selection">Clear Selection</button>
+        </div>
+
+        <button type="button" id="addMission">Add Another Quest</button>
+        <button type="submit">Submit Quests</button>
+    </form>
+
+    <p id="missionCount">Total Missions: 1</p>
+
+    <div id="commonAspects"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
